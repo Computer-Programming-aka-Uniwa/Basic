@@ -74,19 +74,19 @@ The project includes two source code files:
 ## Installation and Usage
 
 ### 1. Clone the Repository
-```
+```bash
 git clone https://github.com/Computer-Programming-aka-Uniwa/Basic.git
 cd Basic
 ```
 
 ### 2. Compile
-```
+```bash
 gcc -o MathsIntegers MathsIntegers.c
 gcc -o CubeSphere CubeSphere.c
 ```
 
 ### 3. Run
-```
+```bash
 ./MathsIntegers
 ./CubeSphere
 ```
@@ -107,7 +107,7 @@ gcc -o CubeSphere CubeSphere.c
 
 ## Πληροφορίες Μαθήματος
 - **Μάθημα**: Προγραμματισμός Υπολογιστών
-- **Εξάμηνο**: 1ο
+- **Εξάμηνο**: 1
 - **Πρόγραμμα Σπουδών**: [ΠΑΔΑ](https://www.uniwa.gr/)
 - **Τμήμα**: [Μηχανικών Πληροφορικής και Υπολογιστών](https://ice.uniwa.gr/)
 - **Διδάσκων**: [Γεώργιος Μελετίου](https://ice.uniwa.gr/emd_person/17562/)
@@ -168,19 +168,19 @@ gcc -o CubeSphere CubeSphere.c
 ## Εγκατάσταση και Χρήση
 
 ### 1. Κλωνοποίηση του Αποθετηρίου
-```
+```bash
 git clone https://github.com/Computer-Programming-aka-Uniwa/Basic.git
 cd Basic
 ```
 
 ### 2. Μεταγλώττιση
-```
+```bash
 gcc -o MathsIntegers MathsIntegers.c
 gcc -o CubeSphere CubeSphere.c
 ```
 
 ### 3. Εκτέλεση
-```
+```bash
 ./MathsIntegers
 ./CubeSphere
 ```
