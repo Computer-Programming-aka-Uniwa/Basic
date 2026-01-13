@@ -1,186 +1,243 @@
-![Flag](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Flag_of_the_United_Kingdom_%281-2%29.svg/255px-Flag_of_the_United_Kingdom_%281-2%29.svg.png)
+<p align="center">
+  <img src="https://www.especial.gr/wp-content/uploads/2019/03/panepisthmio-dut-attikhs.png" alt="UNIWA" width="150"/>
+</p>
 
-# Basic Programs to C Programming Language
+<p align="center">
+  <strong>UNIVERSITY OF WEST ATTICA</strong><br>
+  SCHOOL OF ENGINEERING<br>
+  DEPARTMENT OF COMPUTER ENGINEERING AND INFORMATICS
+</p>
 
-For the requested Assignment, click the link:
-[Assignment](Assignment/)
+---
 
-For the Source Code, click the link:
-[Code](Code/)
+<p align="center">
+  <strong>Computer Programming</strong>
+</p>
 
-For the detailed Documentation, click the link:
-[Documentation](Documentation/)
+<h1 align="center">
+  C Programming Fundamentals
+</h1>
 
-## Course Information
-- **Course**: [Computer Programming](https://ice.uniwa.gr/education/undergraduate/courses/computer-programming/)
-- **Semester**: 1
-- **Program**: [UNIWA](https://www.uniwa.gr/)
-- **Department**: [Informatics and Computer Engineering](https://ice.uniwa.gr/)
-- **Instructor**: [Georgios Meletiou](https://ice.uniwa.gr/emd_person/17562/)
+<p align="center">
+  <strong>Vasileios Evangelos Athanasiou</strong><br>
+  Student ID: 19390005
+</p>
 
-## Student Information
-- **Name**: Athanasiou Vasileios Evangelos
-- **Student ID**: ice19390005
-- **Status**: Undergraduate
+<p align="center">
+  <a href="https://github.com/Ath21" target="_blank">GitHub</a> ·
+  <a href="https://www.linkedin.com/in/vasilis-athanasiou-7036b53a4/" target="_blank">LinkedIn</a>
+</p>
 
-## Assignment Title
-**Title**: Basic Programs in C
+<p align="center">
+  Supervisor: Georgios Meletiou, Laboratory Teaching Staff<br>
+</p>
 
-## Description
-This assignment demonstrates several basic C programs, including topics such as variables, standard input/output, arithmetic and logical operations, and how to handle them in C. Additionally, it explores the preincrement and postincrement operators and includes practical examples and source code.
+<p align="center">
+  <a href="https://ice.uniwa.gr/en/emd_person/georgios-meletiou/" target="_blank">UNIWA Profile</a>
+</p>
 
-The program helps users understand:
-- What a variable is and its characteristics
-- Standard input/output handling in C
-- Arithmetic, relational, and logical operators
-- Preincrement and postincrement operators
+<p align="center">
+  Athens, November 2021
+</p>
 
-### Theory Topics Covered:
-1. **What is a Variable?**
-   - A variable is a symbolic name for a memory location that holds a value and can be changed during the program’s execution.
+---
 
-2. **Characteristics of a Variable**:
-   - Variables have a type (e.g., `int`, `float`, `char`), a storage class (where and how long they exist in memory), and a scope (where they can be accessed in the program).
+# Project Overview
 
-3. **Standard Input and Output**:
-   - **Standard Input**: Refers to the default input device, typically the keyboard. Functions like `scanf()` handle standard input in C.
-   - **Standard Output**: Refers to the default output device, typically the console or terminal. Functions like `printf()` handle standard output in C.
+The project covers **fundamental concepts of the C programming language**, with emphasis on variables, standard input/output, operators, and increment mechanisms, supported by practical source code examples.
 
-4. **Functions to Handle Standard Input and Output in C**:
-   - **Standard Input**: 
-     - `scanf()` reads formatted input from the user.
-   - **Standard Output**:
-     - `printf()` prints formatted output to the terminal.
+---
 
-5. **Operators**:
-   - **Arithmetic Operators**: Used for mathematical operations like addition, subtraction, multiplication, division, and modulus.
-   - **Relational Operators**: Used to compare two values, e.g., `==`, `!=`, `<`, `>`, `<=`, `>=`.
-   - **Logical Operators**: Include AND (`&&`), OR (`||`), and NOT (`!`) to combine or negate conditions.
+## Table of Contents
 
-6. **Preincrement and Postincrement Operators**:
-   - **Preincrement (`++x`)**: Increments the value of the variable before its value is used in an expression.
-   - **Postincrement (`x++`)**: Uses the current value of the variable before incrementing it.
 
-### Source Code:
-The project includes two source code files:
-- **`MathsIntegers.c`**: Demonstrates basic arithmetic operations with integers, covering addition, subtraction, multiplication, division, and modulus.
-- **`CubeSphere.c`**: Calculates the surface area and volume of a cube and a sphere using the same length for both the edge of the cube and the radius of the sphere.
+| Section | Folder / File | Description |
+|------:|---------------|-------------|
+| 1 | `assign/` | Assignment material |
+| 1.1 | `assign/project2.png` | Assignment description / problem statement (English) |
+| 1.2 | `assign/εργασία2.png` | Assignment description / problem statement (Greek) |
+| 2 | `docs/` | Theoretical documentation |
+| 2.1 | `docs/Basic-Elements.pdf` | Basic programming elements and concepts (English) |
+| 2.2 | `docs/Βασικά-Στοιχεία.pdf` | Basic programming elements and concepts (Greek) |
+| 3 | `src/` | Source code implementations |
+| 3.1 | `src/CubeSphere.c` | Geometric computation: cube–sphere problem |
+| 3.2 | `src/MathsIntegers.c` | Integer arithmetic and mathematical operations |
+| 4 | `README.md` | Repository overview and instructions |
 
-## Requirements
-- **C Compiler**: GCC or any C compiler
-- **Operating System**: Linux/Windows/MacOS
-- **Development Environment**: Command Line / IDE
+---
 
-## Installation and Usage
+
+## 1. Theory Topics Covered
+
+### 1.1 Variables
+
+A **variable** is a designated memory location used to temporarily store data during program execution.
+
+#### Characteristics
+- The stored data can change during execution.
+- Users define meaningful variable names for easier understanding and maintenance.
+
+#### Common Data Types
+- `int` – Integers  
+- `float`, `double` – Decimal (floating-point) numbers  
+- `char` – Single characters  
+- `bool` – Logical (true/false) values  
+
+---
+
+### 1.2 Standard Input / Output (I/O)
+
+#### Standard Input
+- The input channel, usually the **keyboard**, used to enter data into a program.
+- **Function:** `scanf()`  
+  - Reads user input.
+  - Stores it in a variable using the **address-of operator (`&`)**.
+
+#### Standard Output
+- The output channel, usually the **screen**, used to display program data.
+- **Function:** `printf()`  
+  - Prints text messages or variable values to the console.
+
+---
+
+### 1.3 Operators
+
+#### Arithmetic Operators
+Used to perform mathematical calculations:
+- Addition (`+`)
+- Subtraction (`-`)
+- Multiplication (`*`)
+- Division (`/`)
+- Modulus (`%`)
+
+#### Relational Operators
+Used to compare values and return:
+- `1` (True) or `0` (False)
+
+Examples:
+- `==`, `!=`, `<`, `>`
+
+#### Logical Operators
+Used to combine or negate conditions:
+
+| Operator | Description |
+|--------|-------------|
+| `&&` (AND) | Produces `1` only if **both operands** are `1` |
+| `||` (OR) | Produces `1` if **at least one operand** is `1` |
+| `!` (NOT) | Reverses the logical value (`1 → 0`, `0 → 1`) |
+
+---
+
+### 1.4 Increment Operators
+
+- **Pre-increment (`++x`)**  
+  Increases the variable value by one **before** it is used in an expression.
+
+- **Post-increment (`x++`)**  
+  Uses the current value of the variable **before** increasing it by one.
+
+---
+
+## 2. Source Code Documentation
+
+The following programs are included and fully documented in the report:
+
+- **`MathsIntegers.c`**  
+  Focuses on:
+  - Integer arithmetic
+  - Program structure
+  - Variable usage and value flow
+
+- **`CubeSphere.c`**  
+  Covers:
+  - Calculations related to geometric shapes
+  - Example computations
+  - Technical remarks and implementation details
+
+
+---
+
+# Installation & Setup Guide
+
+This repository contains **introductory material and example source code for C programming**, developed for the **Computer Programming** course at the **University of West Attica (UNIWA)**.
+
+The project includes **theoretical documentation** and **simple C source files** intended for compilation and execution on a local machine.
+
+---
+
+## Prerequisites
+
+### Required Software
+
+- **C Compiler**
+  - Recommended:
+    - **GCC** (Linux / macOS / Windows via MinGW or WSL)
+
+- **Text Editor or IDE**
+  - Visual Studio Code `(Recommended)`
+  - Code::Blocks
+  - Dev-C++
+  - CLion
+  - Any plain text editor
+
+### Supported Operating Systems
+- Windows
+- Linux `(Recommended)`
+- macOS
+
+---
+
+## Installation
 
 ### 1. Clone the Repository
+
+Clone the repository to your local machine:
+
 ```bash
 git clone https://github.com/Computer-Programming-aka-Uniwa/Basic.git
-cd Basic
 ```
 
-### 2. Compile
+#### Alternative (Without Git)
+
+- Open the repository URL in your browser
+- Click Code → Download ZIP
+- Extract the ZIP file to a local directory
+
+## Compiling & Running the Programs
+### 2. Navigate to Source Directory
 ```bash
-gcc -o MathsIntegers MathsIntegers.c
-gcc -o CubeSphere CubeSphere.c
+cd Basic/src
 ```
 
-### 3. Run
+### 3. Compile the Programs
+Using GCC and adding the flag `-lm` for the `math.h` library to link:
 ```bash
-./MathsIntegers
-./CubeSphere
+gcc MathsIntegers.c -o MathsIntegers -lm
 ```
-
-
-![Flag](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Greece.svg/255px-Flag_of_Greece.svg.png)
-
-# Βασικά Προγράμματα στην Γλώσσα Προγραμματισμού C
-
-Για την ζητούμενη Εργασία, κάντε κλικ στον σύνδεσμο:  
-[Assignment](Assignment/)
-
-Για τον Πηγαίο Κώδικα, κάντε κλικ στον σύνδεσμο:  
-[Code](Code/)
-
-Για την αναλυτική Τεκμηρίωση, κάντε κλικ στον σύνδεσμο:  
-[Documentation](Documentation/)
-
-## Πληροφορίες Μαθήματος
-- **Μάθημα**: Προγραμματισμός Υπολογιστών
-- **Εξάμηνο**: 1
-- **Πρόγραμμα Σπουδών**: [ΠΑΔΑ](https://www.uniwa.gr/)
-- **Τμήμα**: [Μηχανικών Πληροφορικής και Υπολογιστών](https://ice.uniwa.gr/)
-- **Διδάσκων**: [Γεώργιος Μελετίου](https://ice.uniwa.gr/emd_person/17562/)
-
-## Πληροφορίες Φοιτητή
-- **Όνομα**: Αθανασίου Βασίλειος Ευάγγελος
-- **Αριθμός Μητρώου**: ice19390005
-- **Κατάσταση**: Προπτυχιακός
-
-## Τίτλος Εργασίας
-**Τίτλος**: Βασικά Προγράμματα στην C
-
-## Περιγραφή
-Αυτή η εργασία παρουσιάζει διάφορα βασικά προγράμματα στην C, καλύπτοντας θέματα όπως οι μεταβλητές, η διαχείριση τυπικής εισόδου/εξόδου, οι αριθμητικές και λογικές πράξεις, και πώς να τα διαχειριστεί κανείς στη γλώσσα C. Επιπλέον, εξετάζονται οι τελεστές προ-αύξησης και μετα-αύξησης, με πρακτικά παραδείγματα και πηγαίο κώδικα.
-
-Το πρόγραμμα βοηθά τους χρήστες να κατανοήσουν:
-- Τι είναι μια μεταβλητή και τα χαρακτηριστικά της
-- Διαχείριση τυπικής εισόδου/εξόδου στην C
-- Αριθμητικούς, λογικούς και σχεσιακούς τελεστές
-- Τελεστές προ-αύξησης και μετα-αύξησης
-
-### Θεωρητικά Θέματα:
-1. **Τι είναι Μεταβλητή;**
-   - Μια μεταβλητή είναι ένα συμβολικό όνομα για μια θέση μνήμης που περιέχει μια τιμή και μπορεί να αλλάξει κατά την εκτέλεση του προγράμματος.
-
-2. **Χαρακτηριστικά Μεταβλητών**:
-   - Οι μεταβλητές έχουν τύπο (π.χ., `int`, `float`, `char`), κλάση αποθήκευσης (πώς και πού υπάρχουν στη μνήμη) και πεδίο εφαρμογής (σε ποιο μέρος του προγράμματος είναι προσβάσιμες).
-
-3. **Τυπική Είσοδος και Έξοδος**:
-   - **Τυπική Είσοδος**: Αναφέρεται στη βασική συσκευή εισόδου, συνήθως το πληκτρολόγιο. Συναρτήσεις όπως `scanf()` χειρίζονται την τυπική είσοδο στην C.
-   - **Τυπική Έξοδος**: Αναφέρεται στη βασική συσκευή εξόδου, συνήθως την κονσόλα ή το τερματικό. Συναρτήσεις όπως `printf()` χειρίζονται την τυπική έξοδο στην C.
-
-4. **Συναρτήσεις Διαχείρισης Τυπικής Εισόδου και Έξοδου στην C**:
-   - **Τυπική Είσοδος**: 
-     - Η `scanf()` διαβάζει μορφοποιημένα δεδομένα από τον χρήστη.
-   - **Τυπική Έξοδος**:
-     - Η `printf()` εμφανίζει μορφοποιημένα δεδομένα στο τερματικό.
-
-5. **Τελεστές**:
-   - **Αριθμητικοί Τελεστές**: Χρησιμοποιούνται για μαθηματικές πράξεις όπως πρόσθεση, αφαίρεση, πολλαπλασιασμός, διαίρεση και υπόλοιπο.
-   - **Σχεσιακοί Τελεστές**: Χρησιμοποιούνται για σύγκριση δύο τιμών, π.χ., `==`, `!=`, `<`, `>`, `<=`, `>=`.
-   - **Λογικοί Τελεστές**: Περιλαμβάνουν τους ΚΑΙ (`&&`), Ή (`||`), και ΟΧΙ (`!`) για συνδυασμό ή άρνηση συνθηκών.
-
-6. **Τελεστές Προ-Αύξησης και Μετα-Αύξησης**:
-   - **Προ-Αύξηση (`++x`)**: Αυξάνει την τιμή της μεταβλητής πριν χρησιμοποιηθεί στην έκφραση.
-   - **Μετα-Αύξηση (`x++`)**: Χρησιμοποιεί την τρέχουσα τιμή της μεταβλητής πριν αυξηθεί.
-
-### Πηγαίος Κώδικας:
-Το έργο περιλαμβάνει δύο αρχεία πηγαίου κώδικα:
-- **`MathsIntegers.c`**: Παρουσιάζει βασικές αριθμητικές πράξεις με ακέραιους, καλύπτοντας πρόσθεση, αφαίρεση, πολλαπλασιασμό, διαίρεση και υπόλοιπο.
-- **`CubeSphere.c`**: Υπολογίζει την επιφάνεια και τον όγκο ενός κύβου και μιας σφαίρας, χρησιμοποιώντας το ίδιο μήκος για την ακμή του κύβου και την ακτίνα της σφαίρας.
-
-## Απαιτήσεις
-- **Μεταγλωττιστής C**: GCC ή οποιοσδήποτε μεταγλωττιστής C
-- **Λειτουργικό Σύστημα**: Linux/Windows/MacOS
-- **Περιβάλλον Ανάπτυξης**: Γραμμή Εντολών / IDE
-
-## Εγκατάσταση και Χρήση
-
-### 1. Κλωνοποίηση του Αποθετηρίου
 ```bash
-git clone https://github.com/Computer-Programming-aka-Uniwa/Basic.git
-cd Basic
+gcc CubeSphere.c -o CubeSphere
 ```
 
-### 2. Μεταγλώττιση
-```bash
-gcc -o MathsIntegers MathsIntegers.c
-gcc -o CubeSphere CubeSphere.c
-```
-
-### 3. Εκτέλεση
+### 4. Run the Programs
+Linux / macOS:
 ```bash
 ./MathsIntegers
+```
+```bash
 ./CubeSphere
 ```
+Windows:
+```bash
+MathsIntegers.exe
+```
+```bash
+CubeSphere.exe
+```
+
+---
+
+## Open the Documentation
+1. Navigate to the `docs/` directory
+2. Open the report corresponding to your preferred language:
+    - English: `Basic-Elements.pdf`
+    - Greek: `Βασικά-Στοιχεία.pdf`
