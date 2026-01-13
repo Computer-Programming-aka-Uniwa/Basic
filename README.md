@@ -209,10 +209,11 @@ cd Basic/src
 ```
 
 ### 3. Compile the Programs
-Using GCC and adding the flag `-lm` for the `math.h` library to link:
+Using GCC:
 ```bash
 gcc MathsIntegers.c -o MathsIntegers -lm
 ```
+> `-lm` is required to link the math library
 ```bash
 gcc CubeSphere.c -o CubeSphere
 ```
