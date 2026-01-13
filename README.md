@@ -123,7 +123,7 @@ Used to combine or negate conditions:
 | Operator | Description |
 |--------|-------------|
 | `&&` (AND) | Produces `1` only if **both operands** are `1` |
-| `||` (OR) | Produces `1` if **at least one operand** is `1` |
+| `\|\|` (OR)  | Produces `1` if **at least one operand** is `1` |
 | `!` (NOT) | Reverses the logical value (`1 → 0`, `0 → 1`) |
 
 ---
@@ -159,9 +159,8 @@ The following programs are included and fully documented in the report:
 
 # Installation & Setup Guide
 
-This repository contains **introductory material and example source code for C programming**, developed for the **Computer Programming** course at the **University of West Attica (UNIWA)**.
-
-The project includes **theoretical documentation** and **simple C source files** intended for compilation and execution on a local machine.
+This repository contains **introductory C programming material** developed for the  
+**Computer Programming** course at **University of West Attica (UNIWA)**.
 
 ---
 
