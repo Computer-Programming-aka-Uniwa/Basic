@@ -92,7 +92,8 @@ The project covers **fundamental concepts of the C programming language**, with 
 |       3 | `src/`                     | Source code implementations                          |
 |     3.1 | `src/CubeSphere.c`         | Geometric computation: cube–sphere problem           |
 |     3.2 | `src/MathsIntegers.c`      | Integer arithmetic and mathematical operations       |
-|       4 | `README.md`                | Repository overview and instructions                 |
+|       4 | `README.md`                | Project documentation                                |
+|       5 | `INSTALL.md`               | Usage instructions                                   |
 
 ---
 
