@@ -75,8 +75,7 @@
 
 ## C Programming Fundamentals
 
-This repository contains **introductory C programming material** developed for the  
-**Computer Programming** course at **University of West Attica (UNIWA)**.
+This guide explains how to set up, build, and run the project on your local machine.
 
 ---
 
